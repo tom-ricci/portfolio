@@ -1,2 +1,7 @@
 # tom-ricci.github.io
-Personal site.
+### Built with:
+* Svelte
+* Notus Svelte
+* Tailwind
+### Deployed with:
+* Github Pages `./docs/`
