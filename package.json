@@ -23,13 +23,7 @@
     "rollup-plugin-livereload": "2.0.0",
     "rollup-plugin-svelte": "7.1.0",
     "rollup-plugin-terser": "7.0.2",
-    "surge": "^0.23.0",
     "svelte": "3.35.0"
-  },
-  "git": {
-    "scripts": {
-      "pre-push": "surge --project ./public/ --domain tomriccitest.surge.sh"
-    }
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
