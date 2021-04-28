@@ -1,4 +1,4 @@
-# tom-ricci.github.io
+# My portfolio
 ### Built with:
 * Svelte
 * Notus Svelte
