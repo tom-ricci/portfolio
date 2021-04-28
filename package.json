@@ -28,8 +28,9 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./ --domain tomriccitest.surge.sh"
-    },
+      "pre-push": "surge --project ./public/ --domain tomriccitest.surge.sh"
+    }
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
     "@popperjs/core": "2.9.1",
