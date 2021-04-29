@@ -1,6 +1,6 @@
 # My portfolio
 ### Built with:
-* Notus Svelte
+* Svelte
 * Tailwind
 ### Deployed with:
 * Github Pages `./docs/`
