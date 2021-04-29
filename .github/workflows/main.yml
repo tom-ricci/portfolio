@@ -22,9 +22,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Update locally
         run: |
-          mkdir ./docs/
-          rm ./docs/
-          cp ./public/ ./docs/
+          mkdir docs
+          rm -r docs
+          cp public docs
       - name: Commit changes
         run: |
           git config --local user.email "rta@thomasricci.dev"
