@@ -3,27 +3,34 @@ on:
   push:
     branches: [ main ]
     tags-ignore:
-      - deploy
+      - deployment/*
   workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Make changes
+      - name: Remove Current Deployment
         run: |
           if [ -d ./docs ]; then
             rm -r ./docs
+            git config --local user.email "rta@thomasricci.dev"
+            git config --local user.name "RTA"
+            git commit -m "Remove current deployment code" -a
           fi
-          cp -r ./public ./docs
-      - name: Commit changes
+      - name: Add New Deployment
         run: |
+          cp -r ./public ./docs
+          cd ./docs
+          echo "www.thomasricci.dev" > CNAME
+          cd ../
           git config --local user.email "rta@thomasricci.dev"
           git config --local user.name "RTA"
           git add ./docs
-          git commit -m "Deploy production code" -a
-          git tag deploy
-      - name: Push changes
+          git commit -m "Add new deployment code" -a
+          tag=$(date +%s)
+          git tag deployment/$tag
+      - name: Push Deployment
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
