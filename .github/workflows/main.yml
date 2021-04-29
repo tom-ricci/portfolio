@@ -2,11 +2,11 @@ name: Deploy
 on:
   push:
     branches: [ main ]
-    tags-ignore:        
+    tags-ignore:
       - deploy
   workflow_dispatch:
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags/v')
     steps:
