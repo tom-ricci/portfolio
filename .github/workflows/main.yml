@@ -28,7 +28,7 @@ jobs:
           git config --local user.name "RTA"
           git add ./docs
           git commit -m "Add new deployment code" -a
-          tag=date +%s
+          tag=$(date +%s)
           git tag deployment/$tag
       - name: Push Deployment
         uses: ad-m/github-push-action@v0.6.0
