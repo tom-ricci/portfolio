@@ -19,6 +19,7 @@ jobs:
         run: |
           git config --local user.email "rta@thomasricci.dev"
           git config --local user.name "RTA"
+          git add /docs
           git commit -m "Deploy" -a
           git tag deploy
       - name: GitHub Push
