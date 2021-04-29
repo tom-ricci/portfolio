@@ -12,11 +12,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Make changes
         run: |
-          if ! [ -d ./docs ]; then
-            `mkdir -p ./docs`
+          if [ -d ./docs ]; then
+            rm -r ./docs
           fi
-          mkdir docs
-          rm -r ./docs
           cp -r ./public ./docs
       - name: Commit changes
         run: |
