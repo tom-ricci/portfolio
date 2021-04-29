@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
     tags-ignore:
-      - deploy
+      - deployment/*
   workflow_dispatch:
 jobs:
   build:
@@ -28,8 +28,8 @@ jobs:
           git config --local user.name "RTA"
           git add ./docs
           git commit -m "Add new deployment code" -a
-          tag=date +%s 
-          git tag $tag
+          tag=date +%s
+          git tag deployment/$tag
       - name: Push Deployment
         uses: ad-m/github-push-action@v0.6.0
         with:
