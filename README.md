@@ -3,6 +3,6 @@
 * Svelte
 * Tailwind
 ### Deployed with:
-* Github Pages `./docs/`
+* Github Pages in `./docs/`
 ### Versioning:
-* Versions/Release tags are named by `deployment/$time_in_seconds_of_deployment`
+* Versions/Release tags are named by `deployment/$unix_epoch_in_seconds`
