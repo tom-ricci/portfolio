@@ -1,15 +1,11 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-"use strict";
-
-var niche = require("@tom-ricci/niche");
-
-niche({
-  "module": "fetcher",
-  "args": [0, "./assets/names.json", function (data) {
-    console.log(data);
-  }]
-});
-
+let niche = require("@tom-ricci/niche");
+niche({"module": "fetcher", "args": [0, "./assets/names.json", function(data) {
+  document.getElementById("email").setAttribute("href", "mailto:" + data.names[Math.floor(Math.random() * data.names.length)].replace("?", "").replace(",", "") + "@thomasricci.dev");
+  document.getElementById("email2").setAttribute("href", "mailto:" + data.names[Math.floor(Math.random() * data.names.length)].replace("?", "").replace(",", "") + "@thomasricci.dev");
+  document.getElementById("email3").setAttribute("href", "mailto:" + data.names[Math.floor(Math.random() * data.names.length)].replace("?", "").replace(",", "") + "@thomasricci.dev");
+  document.getElementById("email4").setAttribute("href", "mailto:" + data.names[Math.floor(Math.random() * data.names.length)].replace("?", "").replace(",", "") + "@thomasricci.dev");
+}]});
 },{"@tom-ricci/niche":2}],2:[function(require,module,exports){
 const err = "Something went wrong. Check the wiki, and if you used this correctly, create an issue on github!";
 
