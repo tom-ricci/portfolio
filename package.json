@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
     "feather-icons": "^4.28.0",
     "froala-design-blocks": "^2.0.1"
