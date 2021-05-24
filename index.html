@@ -1,174 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+  <meta name="description" content="I'm Thomas Ricci, a developer experienced with Java, JS, HTML, CSS, Python, and others.">
+  <meta name="keywords" content="thomas ricci, thomas, ricci, code, develop, developer">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
   <meta name="author" content="Thomas Ricci">
   <title>Thomas Ricci</title>
-  <meta name="title" content="Thomas Ricci">
-  <meta name="description" content="I'm a developer with experience in a variety of frontend and backend languages, frameworks, and libraries.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thomasricci.dev">
-  <meta property="og:title" content="Thomas Ricci">
-  <meta property="og:description" content="I'm a developer with experience in a variety of frontend and backend languages, frameworks, and libraries.">
-  <meta property="og:image" content="./imgs/draws/git.svg">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://thomasricci.dev">
-  <meta property="twitter:title" content="Thomas Ricci">
-  <meta property="twitter:description" content="I'm a developer with experience in a variety of frontend and backend languages, frameworks, and libraries.">
-  <meta property="twitter:image" content="./imgs/draws/git.svg">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.1/css/froala_blocks.min.css">
-  <link type="text/css" rel="stylesheet" href="./css/froala_blocks.css">
-  <link type="text/css" rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link href="./imgs/favi.svg" rel="icon">
+  <link href="./node_modules/daemonite-material/css/material.min.css" rel="stylesheet">
+  <link type="text/css" href="./node_modules/overlayscrollbars/css/OverlayScrollbars.css" rel="stylesheet"/>
+  <script type="text/javascript" src="./node_modules/overlayscrollbars/js/OverlayScrollbars.js"></script>
+  <link href="assets/styles/style.css" rel="stylesheet">
 </head>
-<body>
-  <div class="main container-fluid">
-    <header>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-md no-gutters">
-          <div class="col-2 text-left">
-            <a href="./">
-              <img src="./imgs/favi.svg" class="navbar-brand" alt="Thomas Ricci">
-            </a>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav4">
-            <ul class="navbar-nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="email3" href="mailto:me@thomasricci.dev">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-            </ul>
-          </div>
-          <ul class="navbar-nav col-2 justify-content-end d-none d-md-flex">
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/tom-ricci"><i class="fa fa-github"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="email" href="mailto:me@thomasricci.dev"><i class="fa fa-envelope"></i></a>
-            </li>
-          </ul>
-        </nav>
+<body class="bg-dark">
+  <div class="container-fluid p-0">
+    <header id="header">
+      <div class="container-fluid p-0 w-fluid h-splash splash text-center text-light">
+        <div class="h-fluid d-flex flex-column justify-content-center align-content-center">
+          <h1 class="font-weight-bold font-size-86">Hey, I'm Thomas.</h1>
+          <h2>I like code.</h2>
+        </div>
       </div>
     </header>
-    <section class="fdb-block fdb-viewport bg-dark" style="background-image: url(./imgs/hero/purple.svg);">
-      <div class="container justify-content-center align-items-center d-flex">
-        <div class="row justify-content-center text-center">
-          <div class="col-12 col-md-8">
-            <img alt="A Monitor" class="fdb-icon animate__animated animate__fadeIn animate__slow" src="./imgs/white-favi.svg">
-            <h1 class="animate__animated animate__fadeInUp">Hey, I'm Thomas.</h1>
-            <p class="lead animate__animated animate__fadeIn animate__delay-1s">I'm a <span id="age">16</span> year old developer with experience in a variety of frontend and backend languages, frameworks, and libraries.</p>
-            <p class="mt-5 animate__animated animate__fadeIn animate__delay-2s"><a id="email2" href="mailto:me@thomasricci.dev" class="btn btn-dark">Contact</a></p>
+    <article id="about">
+      <div class="container-fluid h-md-full bg-info text-white d-flex flex-column justify-content-center align-content-center">
+        <div class="container">
+          <div class="spacer-md"></div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h1 class="font-size-64 font-weight-bold text-center text-md-left">About</h1>
+              <p class="font-size-20 text-center text-md-left">I'm a<span id="age"> 16 year old</span> developer with experience in a variety of frontend and backend technologies. I have experience with Java, JS, HTML, CSS, Python, and other languages. I like to design frontend following Google's Material guidelines. On the backend, I usually use Node and Pterodactyl to build and deploy applications.</p>
+              <p class="font-size-20">I often build random web applications. I usually use just plain HTML, CSS, and JS with some frameworks but I do have experience building Svelte and React apps. I've been programming for <span id="years">3</span> years with my roots planted in JS. I'm most experienced in Java though, and I use it to build Spigot and Paper plugins.</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="spacer-sm"></div>
+              <div class="d-flex flex-column justify-content-center align-content-center h-fluid">
+              <span class="text-center font-size-20">
+                <span class="badge badge-pill badge-info skill">HTML</span><span class="badge badge-pill badge-info skill">CSS</span><span class="badge badge-pill badge-info skill">JavaScript</span><span class="badge badge-pill badge-info skill">Bootstrap</span>
+              </span>
+                <span class="text-center font-size-20">
+                <span class="badge badge-pill badge-info skill">Java</span><span class="badge badge-pill badge-info skill">Python</span><span class="badge badge-pill badge-info skill">C#</span><span class="badge badge-pill badge-info skill">Spigot</span>
+              </span>
+                <span class="text-center font-size-20">
+                <span class="badge badge-pill badge-info skill">Bash</span><span class="badge badge-pill badge-info skill">PHP</span><span class="badge badge-pill badge-info skill">JDA</span><span class="badge badge-pill badge-info skill">Discord.py</span><span class="badge badge-pill badge-info skill">React</span>
+              </span>
+                <span class="text-center font-size-20">
+                <span class="badge badge-pill badge-info skill">PMMP</span><span class="badge badge-pill badge-info skill">Docker</span><span class="badge badge-pill badge-info skill">SMTP</span><span class="badge badge-pill badge-info skill">Paper</span>
+              </span>
+                <span class="text-center font-size-20">
+                <span class="badge badge-pill badge-info skill">Pterodactyl</span><span class="badge badge-pill badge-info skill">HTTP</span><span class="badge badge-pill badge-info skill">SFTP</span><span class="badge badge-pill badge-info skill">SSL</span><span class="badge badge-pill badge-info skill">Undertow</span>
+              </span>
+                <span class="text-center font-size-20">
+                <span class="badge badge-pill badge-info skill">Node.js</span><span class="badge badge-pill badge-info skill">Svelte</span><span class="badge badge-pill badge-info skill">npm</span><span class="badge badge-pill badge-info skill">SSH</span>
+              </span>
+              </div>
+            </div>
+          </div>
+          <div class="spacer-md"></div>
+        </div>
+      </div>
+    </article>
+    <article id="commander">
+      <div class="container-fluid h-md-full bg-danger text-white d-flex flex-column justify-content-center align-content-center">
+        <div class="container">
+          <div class="spacer-md"></div>
+          <div class="row d-md-none text-center">
+            <div class="col-12 col-md-6">
+              <h1 class="font-size-64 font-weight-bold">Commander</h1>
+              <p class="font-size-20">Commander is a Discord slash command generator for JavaScript and Python. Make your bot's commands easy to use with slash commands, which integrate commands seamlessly into the Discord client. With slash commands, you can add documentation to your command in Discord. Forget having to worry about sanitization and type checking and let Discord handle it for you via Discord's slash command argument system. Arguments, like commands, are seamlessly integrated into the client and make specifying options a breeze.</p>
+              <p class="font-size-20">Commander currently does not support Discord.js or Discord.py. Commander is also currently in development, so you wouldn't be able to generate commands yet anyway.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-5 col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <img class="img-fluid" src="./assets/media/texting.svg" alt="Commander">
+                </div>
+              </div>
+              <div class="spacer-md"></div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <a class="btn btn-flat my-1 text-light font-weight-bold btn-lg" type="button" href="https://commander.thomasricci.dev">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-md-block col-12 col-md-7 col-lg-6 text-right">
+              <h1 class="font-size-64 font-weight-bold">Commander</h1>
+              <p class="font-size-20">Commander is a Discord slash command generator for JavaScript and Python. Make your bot's commands easy to use with slash commands, which integrate commands seamlessly into the Discord client. With slash commands, you can add documentation to your command in Discord. Forget having to worry about sanitization and type checking and let Discord handle it for you via Discord's slash command argument system. Arguments, like commands, are seamlessly integrated into the client and make specifying options a breeze.</p>
+              <p class="font-size-20">Commander currently does not support Discord.js or Discord.py. Commander is also currently in development, so you wouldn't be able to generate commands yet anyway.</p>
+            </div>
+          </div>
+          <div class="spacer-md"></div>
+        </div>
+      </div>
+    </article>
+    <article id="niche">
+      <div class="container-fluid h-md-full bg-success text-white d-flex flex-column justify-content-center align-content-center">
+        <div class="container">
+          <div class="spacer-md"></div>
+          <div class="row flex-row-reverse flex-md-row">
+            <div class="col-12 col-md-6">
+              <h1 class="font-size-64 font-weight-bold text-center text-md-left">Niche</h1>
+              <p class="font-size-20 text-center text-md-left">Speed up your development. Use with your favorite package manager. Write simple, clean code effortlessly.</p>
+              <p class="font-size-20 text-center text-md-left">Rather than having to painstakingly rewrite blocks of code or abstract methods yourself, use Niche, an npm package of abstracted methods to make coding easier. Full of random methods, you'll be sure to find something you can use.</p>
+              <p class="font-size-20 text-center text-md-left">If you can't find anything useful, add your own methods. Niche is open-source under the MIT license and anyone can contribute to it.</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-12">
+                  <img class="img-fluid" src="./assets/media/code.svg" alt="Niche">
+                </div>
+              </div>
+              <div class="spacer-md"></div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <a class="btn btn-flat my-1 text-light font-weight-bold btn-lg" type="button" href="https://niche.thomasricci.dev">Learn More</a>
+                </div>
+              </div>
+              <div class="spacer-md"></div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="fdb-block py-0" id="about">
-      <div class="container bg-r py-5 my-5 bg-about">
-        <div class="row py-5">
-          <div class="col-12 col-xl-6 text-center text-xl-left">
-            <h1>About</h1>
-            <p class="lead">I'm a <span id="age2">16</span> year old developer with experience in a variety of frontend and backend languages, frameworks, and libraries. I have experience with HTML, CSS, JS, Svelte, Java, and Python. I use Bootstrap on the frontend, and Node, npm, Undertow, and Pterodactyl on the backend.</p>
+    </article>
+    <article id="contact">
+      <div class="container-fluid h-md-full bg-primary-dark text-white d-flex flex-column justify-content-center align-content-center">
+        <div class="container">
+          <div class="spacer-md"></div>
+          <div class="row d-md-none">
+            <div class="col-12 col-md-6 text-center">
+              <h1 class="font-size-64 font-weight-bold">Contact</h1>
+              <p class="font-size-20">To get in touch, just <a href="mailto:me@thomasricci.dev">send me an email</a>.</p>
+            </div>
           </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-12">
+                  <img class="img-fluid" src="./assets/media/contact.svg" alt="Contact">
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-md-block col-12 col-md-6 text-right">
+              <h1 class="font-size-64 font-weight-bold">Contact</h1>
+              <p class="font-size-20">To get in touch, just <a href="mailto:me@thomasricci.dev">send me an email</a>.</p>
+            </div>
+          </div>
+          <div class="spacer-md"></div>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="container">
+    </article>
+    <article id="github">
+      <div class="container-fluid h-md-full bg-black text-white d-flex flex-column justify-content-center align-content-center">
+        <div class="container">
+          <div class="spacer-md"></div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h1 class="font-size-64 font-weight-bold text-center text-md-left">GitHub</h1>
+              <p class="font-size-20 text-center text-md-left">All of my code lives on GitHub. I store my projects in Git repositories and host them using GitHub. The frontend of this website is even hosted using GitHub Pages.</p>
+              <div class="text-center">
+                <div class="row">
+                  <div class="col-12 text-left d-none d-md-block">
+                    <img class="img-fluid" src="https://raw.githubusercontent.com/tom-ricci/stats/master/generated/languages.svg" alt="My GitHub Statistics">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-12">
+                  <img class="img-fluid" src="./assets/media/git.svg" alt="GitHub">
+                </div>
+              </div>
+              <div class="spacer-md"></div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <a class="btn btn-flat my-1 text-light font-weight-bold btn-lg" type="button" href="https://github.com/tom-ricci">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spacer-md"></div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div class="container-fluid bg-dark-light text-white d-flex flex-column justify-content-center align-content-center">
+        <div class="container">
+          <div class="spacer-md"></div>
+          <div class="row text-center text-md-left">
+            <div class="col-12 col-md-4 mb-4 mb-md-1">
+              <h4 class="mb-1 font-weight-bold">Navigator</h4>
+              <a class="text-light d-block" href="#header">Header</a>
+              <a class="text-light d-block" href="#about">About</a>
+              <a class="text-light d-block" href="#commander">Commander</a>
+              <a class="text-light d-block" href="#niche">Niche</a>
+              <a class="text-light d-block" href="#contact">Contact</a>
+              <a class="text-light d-block" href="#github">GitHub</a>
+            </div>
+            <div class="col-12 col-md-4 mb-4 mb-md-1">
+              <h4 class="mb-1 font-weight-bold">Links</h4>
+              <a class="text-light d-block" href="https://commander.thomasricci.dev">Commander</a>
+              <a class="text-light d-block" href="https://niche.thomasricci.dev">Niche</a>
+              <a class="text-light d-block" href="https://github.com/tom-ricci">GitHub</a>
+              <a class="text-light d-block" href="mailto:me@thomasricci.dev">*@thomasricci.dev</a>
+            </div>
+            <div class="col-12 col-md-4">
+              <h4 class="mb-1 font-weight-bold">About</h4>
+              <p>I'm a<span id="age2"> 16 year old</span> developer with experience in a variety of frontend and backend technologies.</p>
+            </div>
+          </div>
+        </div>
         <hr>
-      </div>
-    </section>
-    <section class="fdb-block" id="projects">
-      <div class="container">
-        <div class="row text-right align-items-center">
-          <div class="col-12 col-md-7 col-lg-5 m-auto text-left pt-5 pt-md-0">
-            <div class="text-center pb-lg-5">
-              <h1>niche</h1>
-              <p class="lead"><kbd><span class="text-danger">npm</span> <span class="text-secondary">i</span> <span class="text-primary">@tom-ricci/niche</span></kbd></p>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>© <span id="copyright">2021</span> Thomas Ricci. All rights reserved.</p>
             </div>
-            <div class="row pt-4 pt-md-5 pb-lg-5">
-              <div class="col-3">
-                <img alt="image" class="img-fluid" src="./imgs/icons/monitor.svg">
-              </div>
-              <div class="col-9">
-                <h3><strong>Speed up your development.</strong></h3>
-                <p>Access a library of abstracted methods to make your development faster.</p>
-              </div>
-            </div>
-            <div class="row pt-4 pt-md-5 pb-lg-5">
-              <div class="col-3">
-                <img alt="image" class="img-fluid" src="./imgs/icons/layers.svg">
-              </div>
-              <div class="col-9">
-                <h3><strong>Use as a package.</strong></h3>
-                <p>Download using npm and develop for Node or frontend using <a href="http://browserify.org/">Browserify</a>.</p>
-              </div>
-            </div>
-            <div class="row pt-4 pt-md-5">
-              <div class="col-3">
-                <img alt="image" class="img-fluid" src="./imgs/icons/cloud.svg">
-              </div>
-              <div class="col-9">
-                <h3><strong>So simple, you can code on the go.</strong></h3>
-                <p>Make deploying that one critical security patch over your time off easier.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-7 col-md-4 m-auto">
-            <img alt="image" class="img-fluid" src="./imgs/draws/simple-iphone.svg">
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="fdb-block footer-large bg-dark">
-      <div class="container">
-        <div class="row align-items-top text-center text-md-left">
-          <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0">
-            <h3><strong>Built with</strong></h3>
-            <p><a href="https://getbootstrap.com" class="text-footer">Bootstrap</a></p>
-            <p><a href="https://froala.com/design-blocks" class="text-footer">Froala</a></p>
-            <p><a href="https://feathericons.com" class="text-footer">Feather</a></p>
-            <p><a href="https://niche.thomasricci.dev" class="text-footer">Niche</a></p>
-            <p><a href="http://browserify.org" class="text-footer">Browserify</a></p>
-            <p><a href="https://fontawesome.com" class="text-footer">Font Awesome</a></p>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <h3><strong>Links</strong></h3>
-            <p><a href="https://github.com/tom-ricci" class="text-footer">GitHub</a></p>
-            <p><a href="https://niche.thomasricci.dev" class="text-footer">Niche</a></p>
-            <p><a href="https://github.com/tom-ricci/portfolio" class="text-footer">Source Code</a></p>
-            <p><a href="mailto:me@thomasricci.dev" id="email4" class="text-footer">*@thomasricci.dev</a></p>
-          </div>
-          <div class="col-12 col-md-4 mt-5 mt-md-0 text-md-left">
-            <h3><strong>About</strong></h3>
-            <p>I'm a <span id="age3">16</span> year old developer with experience in a variety of frontend and backend languages, frameworks, and libraries.</p>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col text-center">
-            © <span id="copyright"></span> Thomas Ricci. All Rights Reserved.
           </div>
         </div>
       </div>
     </footer>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="./js/compiled/bundle.js"></script>
-  <script src="./js/main.js" type="module"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/daemonite-material/js/material.min.js"></script>
+  <script type="module">
+    import {scrollbar, age, copyright, years} from "./assets/js/main.js";
+    scrollbar();
+    document.getElementById("age").innerText = ` ${age()} year old`;
+    document.getElementById("age2").innerText = ` ${age()} year old`;
+    document.getElementById("years").innerText = years();
+    document.getElementById("copyright").innerText = copyright();
+  </script>
 </body>
 </html>

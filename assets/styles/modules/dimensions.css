@@ -1,0 +1,25 @@
+.p-0 {
+  padding: 0;
+}
+.w-fluid {
+  width: 100%;
+}
+.w-full {
+  width: 100vw;
+}
+.h-fluid {
+  height: 100%;
+}
+.h-full {
+  height: 100vh;
+}
+@media screen and (min-width: 1400px) {
+  hr {
+    width: 1300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h-md-full {
+    min-height: calc(100vh + 100px);
+  }
+}
