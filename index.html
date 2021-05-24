@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+  <title>Thomas Ricci</title>
   <meta name="description" content="I'm Thomas Ricci, a developer experienced with Java, JS, HTML, CSS, Python, and others.">
   <meta name="keywords" content="thomas ricci, thomas, ricci, code, develop, developer">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   <meta name="revisit-after" content="1 days">
   <meta name="author" content="Thomas Ricci">
-  <title>Thomas Ricci</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./node_modules/daemonite-material/css/material.min.css" rel="stylesheet">
   <link type="text/css" href="./node_modules/overlayscrollbars/css/OverlayScrollbars.css" rel="stylesheet"/>
   <script type="text/javascript" src="./node_modules/overlayscrollbars/js/OverlayScrollbars.js"></script>
   <link href="./assets/media/favi.svg" rel="icon">
+  <link href="./node_modules/animate.css/animate.css" rel="stylesheet">
   <link href="assets/styles/style.css" rel="stylesheet">
 </head>
 <body class="bg-dark">
+  <noscript class="container-fluid h-full d-flex flex-column justify-content-center align-content-center bg-gray text-black">
+    <p>Please enable JavaScript to load this page. If you just need to find me, <a href="mailto:me@thomasricci.dev" class="text-info">email me.</a></p>
+  </noscript>
+  <script type="module">
+    import {scrollbar} from "./assets/js/main.js";
+    scrollbar();
+  </script>
   <div class="container-fluid p-0">
     <header id="header">
       <div class="container-fluid p-0 w-fluid h-splash splash text-center text-light">
         <div class="h-fluid d-flex flex-column justify-content-center align-content-center">
-          <h1 class="font-weight-bold font-size-86">Hey, I'm Thomas.</h1>
-          <h2>I like code.</h2>
+          <h1 class="font-weight-bold font-size-86 animate__animated animate__fadeInUp animate__delay-1s">Hey, I'm Thomas.</h1>
+          <h2 class="animate__animated animate__fadeIn animate__delay-2s">I like code.</h2>
         </div>
       </div>
     </header>
@@ -235,8 +242,7 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="./node_modules/daemonite-material/js/material.min.js"></script>
   <script type="module">
-    import {scrollbar, age, copyright, years} from "./assets/js/main.js";
-    scrollbar();
+    import {age, copyright, years} from "./assets/js/main.js";
     document.getElementById("age").innerText = ` ${age()} year old`;
     document.getElementById("age2").innerText = ` ${age()} year old`;
     document.getElementById("years").innerText = years();
