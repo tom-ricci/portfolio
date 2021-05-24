@@ -22,3 +22,6 @@
 .text-light {
   color: var(--light) !important;
 }
+.bg-gray {
+  background-color: #C2C2C2;
+}
