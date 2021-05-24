@@ -1,0 +1,12 @@
+.bg-dark {
+  background-color: var(--dark-dark) !important;
+}
+.bg-danger {
+  background-color: var(--danger-dark) !important;
+}
+.bg-info {
+  background-color: var(--info) !important;
+}
+.text-light {
+  color: var(--light) !important;
+}
