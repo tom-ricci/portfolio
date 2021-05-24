@@ -7,6 +7,15 @@
 .bg-info {
   background-color: var(--info) !important;
 }
+.bg-success {
+  background-color: var(--success) !important;
+}
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+.bg-black {
+  background-color: #212121;
+}
 .text-light {
   color: var(--light) !important;
 }

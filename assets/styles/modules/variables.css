@@ -2,6 +2,12 @@
   --info: #19B7FE !important;
   --info-dark: #1995E0 !important;
   --info-light: #2CC6FE !important;
+  --success: #07e5bc !important;
+  --success-dark: #07CFA5 !important;
+  --success-light: #07EFC6 !important;
+  --warning: #fedc56 !important;
+  --warning-dark: #DFBD53 !important;
+  --warning-light: #FEF46A !important;
   --danger: #FF6584 !important;
   --danger-dark: #E55B77 !important;
   --danger-light: #FF707D !important;
