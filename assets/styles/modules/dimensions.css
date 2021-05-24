@@ -13,8 +13,13 @@
 .h-full {
   height: 100vh;
 }
+@media screen and (min-width: 1400px) {
+  hr {
+    width: 1300px;
+  }
+}
 @media screen and (min-width: 768px) {
   .h-md-full {
-    min-height: 100vh;
+    min-height: calc(100vh + 100px);
   }
 }

@@ -16,6 +16,9 @@
 .bg-black {
   background-color: #212121;
 }
+.bg-dark-light {
+  background-color: var(--dark-light) !important;
+}
 .text-light {
   color: var(--light) !important;
 }
