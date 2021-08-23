@@ -13,6 +13,9 @@
 .h-full {
   height: 100vh;
 }
+.min-h-full {
+  min-height: 100vh;
+}
 @media screen and (min-width: 1400px) {
   hr {
     width: 1300px;

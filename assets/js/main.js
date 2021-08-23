@@ -5,7 +5,7 @@ export function scrollbar() {
 }
 
 export function age() {
-  return Math.round(((Date.now() - Date.parse("Nov 15 2004")) / 31709800000)).toString();
+  return Math.floor(((Date.now() - Date.parse("Nov 15 2004")) / 31709800000)).toString();
 }
 
 export function copyright() {
