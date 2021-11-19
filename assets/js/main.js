@@ -4,10 +4,6 @@ export function scrollbar() {
   });
 }
 
-export function age() {
-  return Math.floor(((Date.now() - Date.parse("Nov 15 2004")) / 31709800000)).toString();
-}
-
 export function copyright() {
   if(parseInt(Date().split(" ")[3]) === 2021) {
     return "2021";
