@@ -1,7 +1,8 @@
-@import "modules/variables.css";
+@import "./modules/variables.css";
 @import "./modules/colors.css";
 @import "./modules/font.css";
 @import "./modules/dimensions.css";
 @import "./modules/splash.css";
 @import "./modules/spacers.css";
 @import "./modules/skills.css";
+@import "./modules/animation.css";

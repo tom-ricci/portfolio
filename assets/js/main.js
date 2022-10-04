@@ -15,3 +15,9 @@ export function copyright() {
 export function years() {
   return (parseInt(Date().split(" ")[3]) - 2018).toString();
 }
+
+export function float() {
+  setTimeout(() => {
+    document.getElementById("expand").classList.add("animated");
+  }, 2000)
+}

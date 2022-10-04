@@ -21,6 +21,7 @@
   <meta property="og:site_name" content="Thomas Ricci">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
   <link href="libs/daemonite-material/css/material.min.css" rel="stylesheet">
   <link type="text/css" href="libs/overlayscrollbars/css/OverlayScrollbars.css" rel="stylesheet"/>
   <script type="text/javascript" src="libs/overlayscrollbars/js/OverlayScrollbars.js"></script>
@@ -39,9 +40,16 @@
 <div class="container-fluid p-0">
   <header id="header">
     <div class="container-fluid p-0 w-fluid h-splash splash text-center text-light">
-      <div class="h-fluid d-flex flex-column justify-content-center align-content-center">
-        <h1 class="font-weight-bold font-size-86 animate__animated animate__fadeInUp animate__delay-1s">Hey, I'm Thomas.</h1>
-        <h2 class="animate__animated animate__fadeIn animate__delay-2s">I like code.</h2>
+      <div class="h-fluid h-full d-flex flex-column justify-content-center">
+        <div class="h-100 d-flex flex-column justify-content-center align-content-center">
+          <h1 class="font-weight-bold font-size-86 animate__animated animate__fadeInUp animate__delay-1s">Hey, I'm Thomas.</h1>
+          <h2 class="animate__animated animate__fadeIn animate__delay-2s">I like code.</h2>
+        </div>
+        <div class="pb-5 flex d-flex justify-content-center align-content-end">
+          <span id="expand" class="material-symbols-outlined font-size-32 animated_start">
+            expand_more
+          </span>
+        </div>
       </div>
     </div>
   </header>
@@ -52,26 +60,27 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <h1 class="font-size-64 font-weight-bold text-center text-md-left">About</h1>
-            <p class="font-size-20 text-center text-md-left">I'm a developer with experience in a variety of frontend and backend technologies. I have experience with Java, JS, HTML, CSS, Python, and other languages. I like to design frontend following Google's Material guidelines. On the backend, I usually use Node and Pterodactyl to build and deploy applications.</p>
-            <p class="font-size-20">I often build random web applications. I usually use just plain HTML, CSS, and JS with some frameworks but I do have experience building Svelte and React apps. I've been programming for <span id="years">3</span> years with my roots planted in JS. I'm most experienced in Java though, and I use it to build Spigot and Paper plugins.</p>
+            <p class="font-size-20 text-center text-md-left">I'm FTC 19460&mdash;The Ryken Force's Captain and Director of Software. I have experience with a multitude of languages such as Java, Kotlin, TS, JS, and Python. I've been programming for <span id="years">3</span> years, starting with JS and expanding my knowledge far beyond since then to include languages such as Java, Kotlin, TS, and Python.</p>
+            <p class="font-size-20 text-center text-md-left">I like to create various different applications, but mostly autonomous robotics systems.</p>
+            <p class="font-size-20"></p>
           </div>
           <div class="col-12 col-md-6">
             <div class="spacer-sm"></div>
             <div class="d-flex flex-column justify-content-center align-content-center h-fluid">
               <span class="text-center font-size-20">
-                <span class="badge badge-pill badge-info skill">HTML</span><span class="badge badge-pill badge-info skill">CSS</span><span class="badge badge-pill badge-info skill">JavaScript</span><span class="badge badge-pill badge-info skill">Bootstrap</span>
+                <span class="badge badge-pill badge-info skill">Java</span><span class="badge badge-pill badge-info skill">Kotlin</span><span class="badge badge-pill badge-info skill">TypeScript</span><span class="badge badge-pill badge-info skill">JavaScript</span>
               </span>
               <span class="text-center font-size-20">
-                <span class="badge badge-pill badge-info skill">Java</span><span class="badge badge-pill badge-info skill">Python</span><span class="badge badge-pill badge-info skill">C#</span><span class="badge badge-pill badge-info skill">Spigot</span>
+                <span class="badge badge-pill badge-info skill">React</span><span class="badge badge-pill badge-info skill">Vite</span><span class="badge badge-pill badge-info skill">HTML</span><span class="badge badge-pill badge-info skill">CSS</span>
               </span>
               <span class="text-center font-size-20">
-                <span class="badge badge-pill badge-info skill">Bash</span><span class="badge badge-pill badge-info skill">PHP</span><span class="badge badge-pill badge-info skill">JDA</span><span class="badge badge-pill badge-info skill">Discord.py</span><span class="badge badge-pill badge-info skill">React</span>
+                <span class="badge badge-pill badge-info skill">Sass</span><span class="badge badge-pill badge-info skill">Node</span><span class="badge badge-pill badge-info skill">TailwindCSS</span><span class="badge badge-pill badge-info skill">Bash</span><span class="badge badge-pill badge-info skill">Python</span>
               </span>
               <span class="text-center font-size-20">
                 <span class="badge badge-pill badge-info skill">Express</span><span class="badge badge-pill badge-info skill">Docker</span><span class="badge badge-pill badge-info skill">SMTP</span><span class="badge badge-pill badge-info skill">Paper</span>
               </span>
               <span class="text-center font-size-20">
-                <span class="badge badge-pill badge-info skill">Pterodactyl</span><span class="badge badge-pill badge-info skill">HTTP</span><span class="badge badge-pill badge-info skill">SFTP</span><span class="badge badge-pill badge-info skill">SSL</span><span class="badge badge-pill badge-info skill">Typescript</span>
+                <span class="badge badge-pill badge-info skill">Pterodactyl</span><span class="badge badge-pill badge-info skill">HTTP</span><span class="badge badge-pill badge-info skill">SFTP</span><span class="badge badge-pill badge-info skill">SSL</span><span class="badge badge-pill badge-info skill">Bootstrap</span>
               </span>
               <span class="text-center font-size-20">
                 <span class="badge badge-pill badge-info skill">Node.js</span><span class="badge badge-pill badge-info skill">Svelte</span><span class="badge badge-pill badge-info skill">npm</span><span class="badge badge-pill badge-info skill">SSH</span>
@@ -110,14 +119,14 @@
       </div>
     </div>
   </article>
-  <article id="github">
+  <article id="projects">
     <div class="container-fluid h-md-full bg-black text-white d-flex flex-column justify-content-center align-content-center">
       <div class="container">
         <div class="spacer-md"></div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <h1 class="font-size-64 font-weight-bold text-center text-md-left">GitHub</h1>
-            <p class="font-size-20 text-center text-md-left">All of my code lives on GitHub. I store my projects in Git repositories and host them using GitHub. The frontend of this website is even hosted using GitHub Pages.</p>
+            <h1 class="font-size-64 font-weight-bold text-center text-md-left">Projects</h1>
+            <p class="font-size-20 text-center text-md-left">Currently I'm focused on developing systems and APIs to use in autonomous routines for the <a class="text-info" href="https://github.com/XaverianTeamRobotics/FtcRobotController">FTC 2022 season</a> and my <a class="text-info" href="https://octobox.thomasricci.dev">React metaframework</a> designed to provide an SSG-only alternative to Next.js and Remix.</p>
             <div class="text-center">
               <div class="row">
                 <div class="col-12 text-left d-none d-md-block">
@@ -135,7 +144,7 @@
             <div class="spacer-md"></div>
             <div class="row">
               <div class="col-12 text-center">
-                <a class="btn btn-flat my-1 text-light font-weight-bold btn-lg" type="button" href="https://github.com/tom-ricci">Learn More</a>
+                <a class="btn btn-flat my-1 text-light font-weight-bold btn-lg" type="button" href="https://github.com/tom-ricci/?tab=repositories">All Projects</a>
               </div>
             </div>
           </div>
@@ -154,12 +163,12 @@
             <a class="text-light d-block" href="#header">Header</a>
             <a class="text-light d-block" href="#about">About</a>
             <a class="text-light d-block" href="#contact">Contact</a>
-            <a class="text-light d-block" href="#github">GitHub</a>
+            <a class="text-light d-block" href="#projects">Projects</a>
           </div>
           <div class="col-12 col-md-4 mb-4 mb-md-1">
             <h4 class="mb-1 font-weight-bold">Links</h4>
-            <a class="text-light d-block" href="https://commander.thomasricci.dev">Commander</a>
-            <a class="text-light d-block" href="https://niche.thomasricci.dev">Niche</a>
+            <a class="text-light d-block" href="https://octobox.thomasricci.dev">Octobox</a>
+            <a class="text-light d-block" href="https://robotics.xbhs.net">FTC 19460</a>
             <a class="text-light d-block" href="https://github.com/tom-ricci">GitHub</a>
             <a class="text-light d-block" href="mailto:me@thomasricci.dev">*@thomasricci.dev</a>
           </div>
@@ -185,9 +194,10 @@
 <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="libs/daemonite-material/js/material.min.js"></script>
 <script type="module">
-  import {copyright, years} from "./assets/js/main.js";
+  import {copyright, years, float} from "./assets/js/main.js";
   document.getElementById("years").innerText = years();
   document.getElementById("copyright").innerText = copyright();
+  float()
 </script>
 </body>
 </html>

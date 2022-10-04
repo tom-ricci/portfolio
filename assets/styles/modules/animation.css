@@ -1,0 +1,25 @@
+.animated_start {
+    opacity: 0;
+}
+
+.animated {
+    transition: opacity 0.5s linear 1s;
+    opacity: 1;
+    animation: 3s ease-in-out 1s infinite normal float;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-25%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
+}

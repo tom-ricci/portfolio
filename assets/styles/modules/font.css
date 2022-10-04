@@ -23,6 +23,10 @@ strong {
     font-family: 'reg', sans-serif !important;
 }
 @media screen and (min-width: 768px) {
+    .font-size-48 {
+        font-size: 48px;
+    }
+
     .font-size-86 {
         font-size: 86px;
     }
