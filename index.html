@@ -26,7 +26,6 @@
   <link type="text/css" href="libs/overlayscrollbars/css/OverlayScrollbars.css" rel="stylesheet"/>
   <script type="text/javascript" src="libs/overlayscrollbars/js/OverlayScrollbars.js"></script>
   <link href="./assets/media/favi.svg" rel="icon">
-  <link href="libs/animate.css/animate.css" rel="stylesheet">
   <link href="assets/styles/style.css" rel="stylesheet">
 </head>
 <body class="bg-dark">
@@ -42,11 +41,11 @@
     <div class="container-fluid p-0 w-fluid h-splash splash text-center text-light">
       <div class="h-fluid h-full d-flex flex-column justify-content-center">
         <div class="h-100 d-flex flex-column justify-content-center align-content-center">
-          <h1 class="font-weight-bold font-size-86 animate__animated animate__fadeInUp animate__delay-1s">Hey, I'm Thomas.</h1>
-          <h2 class="animate__animated animate__fadeIn animate__delay-2s">I like code.</h2>
+          <h1 class="font-weight-bold font-size-86 animated_head">Hey, I'm Thomas.</h1>
+          <h2 class="animated_subhead">I like code.</h2>
         </div>
         <div class="pb-5 flex d-flex justify-content-center align-content-end">
-          <span id="expand" class="material-symbols-outlined font-size-32 animated_start">
+          <span id="expand" class="pb-3 material-symbols-outlined font-size-32 animated_start">
             expand_more
           </span>
         </div>
@@ -60,8 +59,8 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <h1 class="font-size-64 font-weight-bold text-center text-md-left">About</h1>
-            <p class="font-size-20 text-center text-md-left">I'm FTC 19460&mdash;The Ryken Force's Captain and Director of Software. I have experience with a multitude of languages such as Java, Kotlin, TS, JS, and Python. I've been programming for <span id="years">3</span> years, starting with JS and expanding my knowledge far beyond since then to include languages such as Java, Kotlin, TS, and Python.</p>
-            <p class="font-size-20 text-center text-md-left">I like to create various different applications, but mostly autonomous robotics systems.</p>
+            <p class="font-size-20 text-center text-md-left">
+              I'm a developer with experience in a variety of frontend and backend technologies. I'm also one of FTC 19460&mdash;The Ryken Force's Captains and Directors of Software. I've been programming for <span id="years">3</span> years, starting with JS and expanding my knowledge since then to include languages such as Java, Kotlin, TS, and Python.</p>
             <p class="font-size-20"></p>
           </div>
           <div class="col-12 col-md-6">
@@ -86,33 +85,6 @@
                 <span class="badge badge-pill badge-info skill">Node.js</span><span class="badge badge-pill badge-info skill">Svelte</span><span class="badge badge-pill badge-info skill">npm</span><span class="badge badge-pill badge-info skill">SSH</span>
               </span>
             </div>
-          </div>
-        </div>
-        <div class="spacer-md"></div>
-      </div>
-    </div>
-  </article>
-  <article id="contact">
-    <div class="container-fluid h-md-full bg-primary-dark text-white d-flex flex-column justify-content-center align-content-center">
-      <div class="container">
-        <div class="spacer-md"></div>
-        <div class="row d-md-none">
-          <div class="col-12 col-md-6 text-center">
-            <h1 class="font-size-64 font-weight-bold">Contact</h1>
-            <p class="font-size-20">To get in touch, just <a href="mailto:me@thomasricci.dev">send me an email</a>.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="row">
-              <div class="col-12">
-                <img class="img-fluid" src="./assets/media/contact.svg" alt="Contact">
-              </div>
-            </div>
-          </div>
-          <div class="d-none d-md-block col-12 col-md-6 text-right">
-            <h1 class="font-size-64 font-weight-bold">Contact</h1>
-            <p class="font-size-20">To get in touch, just <a href="mailto:me@thomasricci.dev">send me an email</a>.</p>
           </div>
         </div>
         <div class="spacer-md"></div>
@@ -153,8 +125,33 @@
       </div>
     </div>
   </article>
+  <article id="contact">
+    <div class="container-fluid h-md-full bg-primary-dark text-white d-flex flex-column justify-content-center align-content-center">
+      <div class="container">
+        <div class="spacer-md"></div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column h-100 justify-content-center align-content-center">
+              <div>
+                <h1 class="font-size-64 font-weight-bold text-center text-md-left">Contact</h1>
+                <p class="font-size-20 text-center text-md-left">To get in touch, just <a href="mailto:me@thomasricci.dev">send me an email</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-12">
+                <img class="img-fluid" src="./assets/media/contact.svg" alt="GitHub">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacer-md"></div>
+      </div>
+    </div>
+  </article>
   <footer>
-    <div class="container-fluid bg-dark-light text-white d-flex flex-column justify-content-center align-content-center">
+    <div class="container-fluid bg-info-dark text-white d-flex flex-column justify-content-center align-content-center">
       <div class="container">
         <div class="spacer-md"></div>
         <div class="row text-center text-md-left">

@@ -19,5 +19,5 @@ export function years() {
 export function float() {
   setTimeout(() => {
     document.getElementById("expand").classList.add("animated");
-  }, 2000)
+  }, 1500)
 }

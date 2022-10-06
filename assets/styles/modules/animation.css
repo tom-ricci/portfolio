@@ -2,10 +2,46 @@
     opacity: 0;
 }
 
+.animated_head {
+    opacity: 0;
+    animation: 1s 0.25s normal forwards fadeInUp;
+}
+
+.animated_subhead {
+    opacity: 0;
+    animation: 1s 1.1s normal forwards fadeIn;
+}
+
 .animated {
     transition: opacity 0.5s linear 1s;
     opacity: 1;
-    animation: 3s ease-in-out 1s infinite normal float;
+    animation: 2s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite normal float;
+}
+
+.bg-info-dark {
+    background-color: #212121;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes float {
@@ -15,7 +51,7 @@
     }
 
     50% {
-        transform: translateY(-25%);
+        transform: translateY(-50%);
     }
 
     100% {
