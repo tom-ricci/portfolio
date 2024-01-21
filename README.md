@@ -1,1 +1,1 @@
-See https://github.com/tom-ricci/tom-ricci :D
+See https://github.com/tom-ricci/tom-ricci 
